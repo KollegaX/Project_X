@@ -2,8 +2,28 @@
     width: 400px;
     height: 100vh;
     background-color: #111111;
-    border-right: 1px solid ;
+    border-right: 2px solid #1c1c1c;
+    overflow-y: auto; 
+    scrollbar-width: thin;     
+    scrollbar-color: rgba(0, 0, 0, 0.2) transparent; 
 
+}
+
+
+.mid-panel:-webkit-scrollbar {
+    width: 6px;
+}
+
+
+
+.mid-panel:-webkit-scrollbar-thumb {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 3px;
+}
+
+
+.mid-panel:-webkit-scrollbar-track {
+    background: transparent;
 }
 
 .panel-serverboost {
@@ -37,7 +57,7 @@
   position: absolute;
   top: 50%;
   left: 15%;
-  transform: translate(-50%, -50%); /* center exactly */
+  transform: translate(-50%, -50%); 
   margin: 0;
 }
 

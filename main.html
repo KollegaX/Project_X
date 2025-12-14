@@ -3,96 +3,194 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Blue Factory</title>
+
+    <!-- CSS Panels -->
     <link rel="stylesheet" href="left-panel.css">
     <link rel="stylesheet" href="mid-panel.css">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=BBH+Hegarty&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="right-panel.css">
+    <link rel="stylesheet" href="card-panel.css">
+    <link rel="stylesheet" href="members-panel.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=BBH+Hegarty&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
 
-
-
-
-
-
-
-
-
-
-
-
-
-    
     <div class="big">
-  <div class="left-panel">
-    <!-- Top icons -->
-    <div class="icons">
-        <div><a href=""><img src="images/account.svg" alt="" ></a></div>
-        <div><a href=""><img src="images/home.svg" alt="" ></a></div>
-        <div><a href=""><img src="images/link.svg" alt="" ></a></div>
-        <div><a href=""><img src="images/refresh.svg" alt="" ></a></div>
-    </div>
 
-    <!-- Bottom icon -->
-    <div class="both">
-        <div><a href=""><img src="images/settings.svg" alt="" ></a></div>
-    </div>
-</div>
+        <!-- Left Panel -->
+        <div class="left-panel">
+            <!-- Top icons -->
+            <div class="icons">
+                <div><a href="#"><img src="images/settings.svg" alt="Settings"></a></div>
+                <div><a href="#"><img src="images/home.svg" alt="Home"></a></div>
+                <div><a href="#"><img src="images/link.svg" alt="Link"></a></div>
+                <div><a href="#"><img src="images/refresh.svg" alt="Refresh"></a></div>
+            </div>
 
-
-
-    <div class="mid-panel">
-
-        <div class="panel-serverboost">
-        <h3>Blue Factory</h3>
-        <img src="balenciaga_26.gif" alt="">
-        </div>
-
-
-        <div class="panel-activity">
-            <div class="left-activity">
-                <h3>Your Apps</h3></div>
-            <div class="right-activity">
-                <img src="images/wifi.svg" alt="">
-                <img src="images/folder.svg" alt="">
+            <!-- Bottom icon -->
+            <div class="both">
+                <div><a href="#" id="account-icon"><img src="images/account.svg" alt="Account"></a></div>
             </div>
         </div>
 
-        <div class="panel-course">
-            <p>X</p>
-            <div class="one"><img src="snimka.png" alt=""></div>
-            <div class="two">
-                <h3>How to make a course on Blue Factory</h3>
-                <p>3 lessons : This course will teach you how to make your own course on..</p>
+        <!-- Middle Panel -->
+        <div class="mid-panel">
+
+            <div class="panel-serverboost">
+                <h3>Blue Factory</h3>
+                <img src="balenciaga_26.gif" alt="Server Boost">
             </div>
-            <div class="three-active">
-                <div class="dot-online"></div>
-                <div class="users-online">7 Online</div>
+
+            <div class="panel-activity">
+                <div class="left-activity">
+                    <h3>Your Apps</h3>
+                </div>
+                <div class="right-activity">
+                    <img src="images/wifi.svg" alt="WiFi">
+                    <img src="images/folder.svg" alt="Folder">
+                </div>
+            </div>
+
+            <div class="panel-course">
+                <p>X</p>
+                <div class="one">
+                    <img src="snimka.png" alt="Course Image">
+                </div>
+                <div class="two">
+                    <h3>How to make a course on Blue Factory</h3>
+                    <p>3 lessons: This course will teach you how to make your own course on..</p>
+                </div>
+                <div class="three-active">
+                    <div class="dot-online"></div>
+                    <div class="users-online">2 Online</div>
+                </div>
+            </div>
+
+            <div class="panel-course-unactive">
+                <h3>Courses</h3>
+                <div class="draft">
+                    <p>Draft</p>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Right Panel -->
+        <div class="right">
+
+            <div class="chat-header-bar">
+                <div class="header-left">
+                    <span class="channel-hash">#</span>
+                    <span class="channel-header-name">Secret Room</span>
+                </div>
+            </div>
+
+            <div class="chat">
+                <div class="chat-messages"></div>
+            </div>
+
+            <div class="send-messages">
+                <div class="message-input-container">
+                    <div class="message-input-left">
+                        <button class="icon-btn plus-icon">+</button>
+                    </div>
+                    <input type="text" id="sending-message" placeholder="Message # Secret Room" class="message-input-field">
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Members Panel -->
+        <div class="members-panel">
+            <div class="members-header">
+                <div class="members-header-title">Members — <span class="member-count">2</span></div>
+            </div>
+            <div class="members-list">
+                <div class="members-section">
+                    <div class="members-section-title">
+                        <span>ONLINE — <span class="online-count">2</span></span>
+                    </div>
+
+                    <div class="member-item">
+                        <div class="member-avatar-wrapper">
+                            <div class="member-avatar" style="background-image: url('balenciaga_26.gif');"></div>
+                            <div class="member-status online"></div>
+                        </div>
+                        <div class="member-info">
+                            <div class="member-name">KollegaX</div>
+                            <div class="member-activity">Playing Star Wars</div>
+                        </div>
+                    </div>
+
+                    <div class="member-item">
+                        <div class="member-avatar-wrapper">
+                            <div class="member-avatar" style="background-color: #5865f2;"></div>
+                            <div class="member-status online"></div>
+                        </div>
+                        <div class="member-info">
+                            <div class="member-name">xFerb</div>
+                        </div>
+                    </div>
+
+                </div>
             </div>
         </div>
 
-        <div class="panel-course-unactive">
-            <h3>Courses</h3>
-            <div class="draft">
-                <p>Draft</p>
+        <!-- User Card -->
+        <div class="card">
+            <div class="card-top">
+                <div class="header">
+                    <div class="card-username" id="username">KollegaX</div>
+                    <div class="stars" id="stars"></div>
+                </div>
+                <div class="card-avatar" id="avatar" style="background-image: url('balenciaga_26.gif');"></div>
+            </div>
+
+            <div class="metrics">
+                <div><strong>1200</strong><small>REP</small></div>
+                <div><strong>350</strong><small>LIKES</small></div>
+            </div>
+
+            <div class="rank" id="rankText"></div>
+
+            <div class="badges-row">
+                <div class="badge"><img src="saf.png" alt="badge 1" title="UI GOD"></div>
+                <div class="badge"><img src="saf.png" alt="badge 2" title="UI GOD"></div>
+                <div class="badge"><img src="hehe.png" alt="badge 3" title="UI GOD"></div>
+                <div class="badge"><img src="saf.png" alt="badge 4" title="UI GOD"></div>
+                <div class="badge"><img src="hehe.png" alt="badge 5" title="UI GOD"></div>
+                <div class="badge"><img src="saf.png" alt="badge 6" title="UI GOD"></div>
+                <div class="badge"><img src="saf.png" alt="badge 7" title="UI GOD"></div>
+                <div class="badge"><img src="hehe.png" alt="badge 8" title="UI GOD"></div>
+                <div class="badge"><img src="saf.png" alt="badge 9" title="UI GOD"></div>
+                <div class="badge"><img src="saf.png" alt="badge 10" title="UI GOD"></div>
+                <div class="badge"><img src="hehe.png" alt="badge 11" title="UI GOD"></div>
+                <div class="badge"><img src="saf.png" alt="badge 12" title="UI GOD"></div>
+                <div class="badge"><img src="hehe.png" alt="badge 13" title="UI GOD"></div>
+            </div>
+
+            <div class="info">
+                <div class="info-item">
+                    <div class="info-label"><i class="fas fa-file-alt"></i>Posts:</div>
+                    <div class="info-value">420</div>
+                </div>
+                <div class="info-item">
+                    <div class="info-label"><i class="fas fa-comments"></i>Threads:</div>
+                    <div class="info-value">68</div>
+                </div>
+                <div class="info-item">
+                    <div class="info-label"><i class="fas fa-calendar-alt"></i>Joined:</div>
+                    <div class="info-value">March 2022</div>
+                </div>
             </div>
         </div>
 
     </div>
-    <div class="right"></div>
 
-    </div>
+    <script src="script.js"></script>
 </body>
-<script>
-    const ac = document.querySelector('.panel-course-unactive')
-    const b = document.querySelector('.panel-course p:first-child')
-    const a = document.querySelector('.panel-course');
-    b.addEventListener('click', function() {
-        a.remove();
-        ac.style.borderTop = '';
-
-    })
-</script>
 </html>

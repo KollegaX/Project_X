@@ -1,40 +1,38 @@
 * {
     margin: 0;
     padding: 0;
-     font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  font-style: normal;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
-
-
 
 body {
     background-color: #181818;
 }
 
 .big {
-  display: flex;
-  flex-direction: row;
+    display: flex;
+    flex-direction: row;
 }
 
 .left-panel {
-  height: 100vh;
-  width: 80px;
-  background-color: #111111;
-  border-right: 2px solid #1c1c1c;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between; /* top icons at top, .both at bottom */
-  align-items: center;             /* center horizontally */
+    height: 100vh;
+    width: 80px;
+    background-color: #111111;
+    border-right: 2px solid #1c1c1c;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    align-items: center;            
 }
 
 .icons {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  align-items: center;
-  padding-top: 50px
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    padding-top: 50px
 }
 
 .both {
@@ -43,13 +41,13 @@ body {
 
 .icons img,
 .both img {
-  width: 30px;
-  cursor: pointer;
-  transition: transform 0.2s;
-  filter: brightness(0) invert(1); 
+    width: 30px;
+    cursor: pointer;
+    transition: transform 0.2s;
+    filter: brightness(0) invert(1); 
 }
 
 .icons img:hover,
 .both img:hover {
-  transform: scale(1.1);
+    transform: scale(1.1);
 }

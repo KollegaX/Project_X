@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="left-panel.css">
+    <link rel="stylesheet" href="mid-panel.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=BBH+Hegarty&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    <div class="big">
+  <div class="left-panel">
+    <!-- Top icons -->
+    <div class="icons">
+        <div><a href=""><img src="images/account.svg" alt="" ></a></div>
+        <div><a href=""><img src="images/home.svg" alt="" ></a></div>
+        <div><a href=""><img src="images/link.svg" alt="" ></a></div>
+        <div><a href=""><img src="images/refresh.svg" alt="" ></a></div>
+    </div>
+
+    <!-- Bottom icon -->
+    <div class="both">
+        <div><a href=""><img src="images/settings.svg" alt="" ></a></div>
+    </div>
+</div>
+
+
+
+    <div class="mid-panel">
+
+        <div class="panel-serverboost">
+        <h3>Blue Factory</h3>
+        <img src="balenciaga_26.gif" alt="">
+        </div>
+
+
+        <div class="panel-activity">
+            <div class="left-activity">
+                <h3>Your Apps</h3></div>
+            <div class="right-activity">
+                <img src="images/wifi.svg" alt="">
+                <img src="images/folder.svg" alt="">
+            </div>
+        </div>
+
+        <div class="panel-course">
+            <p>X</p>
+            <div class="one"><img src="snimka.png" alt=""></div>
+            <div class="two">
+                <h3>How to make a course on Blue Factory</h3>
+                <p>3 lessons : This course will teach you how to make your own course on..</p>
+            </div>
+            <div class="three-active">
+                <div class="dot-online"></div>
+                <div class="users-online">7 Online</div>
+            </div>
+        </div>
+
+        <div class="panel-course-unactive">
+            <h3>Courses</h3>
+            <div class="draft">
+                <p>Draft</p>
+            </div>
+        </div>
+
+    </div>
+    <div class="right"></div>
+
+    </div>
+</body>
+<script>
+    const ac = document.querySelector('.panel-course-unactive')
+    const b = document.querySelector('.panel-course p:first-child')
+    const a = document.querySelector('.panel-course');
+    b.addEventListener('click', function() {
+        a.remove();
+        ac.style.borderTop = '';
+
+    })
+</script>
+</html>

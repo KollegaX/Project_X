@@ -1,0 +1,172 @@
+.mid-panel {
+    width: 400px;
+    height: 100vh;
+    background-color: #111111;
+    border-right: 1px solid ;
+
+}
+
+.panel-serverboost {
+    height: 150px;
+    background-color: white;
+    object-fit: cover;
+    overflow: hidden;
+    padding-bottom: 30px;
+}
+
+.panel-serverboost img {
+  -webkit-user-drag: none;
+  user-select: none;
+}
+
+.panel-serverboost h3 {
+    position: absolute;
+    padding: 10px 20px;
+    color: white;
+}
+
+
+.panel-activity {
+    position: relative;
+   height: 50px; 
+   border-bottom: 2px solid #1c1c1c;;
+}
+
+.panel-activity h3 {
+    color: white;
+  position: absolute;
+  top: 50%;
+  left: 15%;
+  transform: translate(-50%, -50%); /* center exactly */
+  margin: 0;
+}
+
+.panel-activity img {
+width: 25px;
+cursor: pointer;
+transition: transform 0.2s;
+filter: brightness(0) invert(1); 
+}
+
+.right-activity {
+    display: flex;
+    gap: 20px;
+     position: absolute;
+    right: 5%;
+    top: 25%;
+}
+
+.panel-course {
+    position: relative;  
+    height: 100px;
+    background-color: black;
+    color: white;
+    border-bottom: 2px solid #1c1c1c;
+}
+
+.panel-course .one {
+    position: absolute;  
+    width: 200px;
+    height: 80px;
+    top: 10px;           
+    left: 10px;         
+
+    background-color: white;
+}
+
+.panel-course .one img {
+      width: 100%;    
+  height: 100%; 
+  object-fit: cover;
+
+}
+
+
+.two {
+    position: absolute;
+    top: 25px;
+    left: 54%;
+    right: 5px
+}
+
+.two h3, p {
+    font-size: 10px;
+}
+
+.two p {
+    padding-top: 10px;
+    color: #5d5d5d;
+}
+
+.three-active {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    top: 77%;
+    left: 83%;
+    position: absolute;
+    border-radius: 10px;
+    background-color: rgba(35, 117, 95, 0.5);
+    width: 60px;
+    height: 15px;
+    text-shadow: 0 0 5px #2ea075
+
+}
+
+.dot-online {
+    width: 10px;
+    height: 10px;
+    background-color: #2ea075;
+    border-radius: 10px;
+    text-shadow: 0 0 10px #2ea075
+}
+
+.users-online {
+    font-size: 10px;
+    color: #2ea075;
+    text-shadow: 0 0 5px #2ea075
+}
+
+
+.panel-course-unactive {
+    position: relative;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    height: 50px;
+    background-color: #111111;
+    border-bottom: 2px solid #1c1c1c;
+}
+
+.panel-course-unactive h3 {
+    color: white;
+    padding-left: 20px;
+}
+
+
+.draft {
+    position: absolute;
+    top: 60%;
+    left: 85%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 15px;
+    background-color: rgba(117, 35, 35, 0.5);
+    border-radius: 10px;
+    
+
+}
+
+.draft p {
+    color:#b36262 ;
+}
+
+.panel-course p:first-child {
+    position: absolute;
+    left: 95%;
+    top: 3px;
+    font-size: 15px;
+    cursor: pointer;
+}
